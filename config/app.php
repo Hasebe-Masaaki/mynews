@@ -176,6 +176,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Barryvdh\Debugbar\ServiceProvider::class, //追記
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -227,20 +228,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
-    ],
-
-    'providers' => [
-      // ...
-      Collective\Html\HtmlServiceProvider::class,
-      // ...
-    ],
-
-    'aliases' => [
-   // ...
-     'Form' => Collective\Html\FormFacade::class,
-     'Html' => Collective\Html\HtmlFacade::class,
-   // ...
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
     ],
 
 ];
